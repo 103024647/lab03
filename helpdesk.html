@@ -1,13 +1,13 @@
-<!doctype html>
-<html>
+<!Doctype html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta
       name="description"
-      content="Demonstrates some basic HTML form elements"
-    />
-    <meta name="keywords" content="HTML, Form, tags" />
-    <meta name="author" content="A Lecturer" />
+      content="Booking time with tutor"
+    >
+    <meta name="keywords" content="HTML, Form, tags">
+    <meta name="author" content="Sophia">
     <title>CWA Helpdesk Appointment</title>
   </head>
 
@@ -18,7 +18,7 @@
         alt="Swinburne logo"
         title="Swinburne logo"
         loading="lazy"
-      />
+      >
     </a>
     <h1>CWA Help Desk Appointment</h1>
     <p>
@@ -41,7 +41,7 @@
             maxlength="20"
             size="10"
             required="required"
-          />
+          >
         </p>
 
         <p>
@@ -54,7 +54,7 @@
             maxlength="20"
             size="15"
             required="required"
-          />
+          >
 
           <label for="familyName">Family Name</label>
           <input
@@ -65,7 +65,7 @@
             maxlength="20"
             size="15"
             required="required"
-          />
+          >
         </p>
       </fieldset>
 
@@ -78,13 +78,13 @@
             name="unitCode"
             value="COS1011"
             required
-          />
+          >
           <label for="COS1011">COS1011</label>
 
-          <input type="radio" id="COS6004" name="unitCode" value="COS6004" />
+          <input type="radio" id="COS6004" name="unitCode" value="COS6004" >
           <label for="COS6004">COS6004</label>
 
-          <input type="radio" id="COS6007" name="unitCode" value="COS6007" />
+          <input type="radio" id="COS6007" name="unitCode" value="COS6007" >
           <label for="COS6007">COS6007</label>
         </p>
 
@@ -110,21 +110,21 @@
           name="category[]"
           value="HTML"
           checked="checked"
-        />
+        >
 
         <label for="CSS">CSS</label>
-        <input type="checkbox" id="CSS" name="category[]" value="CSS" />
+        <input type="checkbox" id="CSS" name="category[]" value="CSS" >
         <label for="Javascript">JavaScript</label>
         <input
           type="checkbox"
           id="Javascript"
           name="category[]"
           value="Javascript"
-        />
+        >
         <label for="PHP">PHP</label>
-        <input type="checkbox" id="PHP" name="category[]" value="PHP" />
+        <input type="checkbox" id="PHP" name="category[]" value="PHP" >
         <label for="MySQL">MySQL</label>
-        <input type="checkbox" id="MySQL" name="category[]" value="MySQL" />
+        <input type="checkbox" id="MySQL" name="category[]" value="MySQL" >
 
         <p>
           <label for="description">Description of Issue</label>
@@ -136,38 +136,38 @@
             rows="4"
             cols="40"
             placeholder="Write description of your problem here..."
-          ></textarea>
+          > </textarea>
         </p>
       </fieldset>
 
       <fieldset>
         <legend>Preferred Date/Time</legend>
         <p>
-          <label for="text">Date</label>
+          <label for="date">Date</label>
           <input
-            type="date"
+            type="text"
             pattern="\d{1,2}/\d{1,2}/\d{4}"
             name="date"
             id="date"
             placeholder="dd-mm-yyyy"
             size="10"
-          />
+          >
         </p>
         <p>
           <label for="time">Time</label>
           <input
             type="text"
-            pattern="^([01]\d|2[0-3]):([0-5]\d)$"
+            pattern="\d{2}:\d{2}"
             name="time"
             id="time"
             placeholder="00:00"
             size="10"
-          />
+          >
         </p>
       </fieldset>
 
-      <input type="submit" value="Book" />
-      <input type="reset" value="Reset form" />
+      <input type="submit" value="Book">
+      <input type="reset" value="Reset form" >
     </form>
   </body>
 </html>
